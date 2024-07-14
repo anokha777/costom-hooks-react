@@ -9,6 +9,7 @@ const DebounceAction = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   const debounceSearch = useDebounce(search);
+  
   useEffect(() => {
     const loadUsers = async () => {
       setLoading(true);
